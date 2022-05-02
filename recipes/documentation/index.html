@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Android Recipes App</title>
+
+    <link type="text/css" rel="stylesheet" href="assets/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="http://yandex.st/highlightjs/6.1/styles/sunburst.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/docs.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/print.css" media="print">
+    <link type="text/css" rel="stylesheet" href="css/custom.css">
+
+    <script type="text/javascript" src="assets/js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="http://yandex.st/highlightjs/6.1/highlight.min.js"></script>
+    <script type="text/javascript" src="assets/js/lunr.min.js"></script>
+
+    
+
+    <script type="text/javascript">var BASE_URL = "";</script>
+    <script type="text/javascript" src="assets/js/viewer.js"></script>
+
+    
+</head>
+<body>
+    <div id="page">
+        <a name="top" />
+        <header id="header">
+            <h1><a href="">Android Recipes App</a></h1>
+        </header>
+        
+
+<div id="sidebar">
+    <form action="search.html"><input id="search" type="text" placeholder="Search" name="q" /></form>
+    <nav id="toc">
+        
+    <ol>
+    
+        <li>
+            <a href="index.html#android-recipes-app">Android Recipes App</a>
+            
+                
+    <ol>
+    
+        <li>
+            <a href="index.html#requirements">Requirements</a>
+            
+        </li>
+    
+</ol>
+
+            
+        </li>
+    
+        <li>
+            <a href="index.html#getting-started">Getting started</a>
+            
+                
+    <ol>
+    
+        <li>
+            <a href="index.html#import-projects-in-adt-bundle">Import projects in ADT Bundle</a>
+            
+        </li>
+    
+        <li>
+            <a href="index.html#run-android-recipes-app-on-a-device-or-on-android-emulator">Run Android recipes app on a device or on Android emulator</a>
+            
+        </li>
+    
+</ol>
+
+            
+        </li>
+    
+        <li>
+            <a href="index.html#customization">Customization</a>
+            
+                
+    <ol>
+    
+        <li>
+            <a href="index.html#choose-your-color-theme">Choose your color theme</a>
+            
+        </li>
+    
+        <li>
+            <a href="index.html#add-some-data-to-the-application">Add some data to the application</a>
+            
+        </li>
+    
+        <li>
+            <a href="index.html#set-up-recipe-indices">Set up recipe indices</a>
+            
+        </li>
+    
+        <li>
+            <a href="index.html#change-launcher-icon">Change Launcher icon</a>
+            
+        </li>
+    
+        <li>
+            <a href="index.html#change-splash-screen-icon">Change Splash screen icon</a>
+            
+        </li>
+    
+        <li>
+            <a href="index.html#change-application-name">Change Application name</a>
+            
+        </li>
+    
+        <li>
+            <a href="index.html#set-up-system-notifications">Set up system notifications</a>
+            
+        </li>
+    
+        <li>
+            <a href="index.html#set-up-ads">Set up Ads</a>
+            
+        </li>
+    
+        <li>
+            <a href="index.html#set-up-google-analytics">Set up Google Analytics</a>
+            
+        </li>
+    
+        <li>
+            <a href="index.html#translate-in-different-language">Translate in different language</a>
+            
+        </li>
+    
+</ol>
+
+            
+        </li>
+    
+        <li>
+            <a href="index.html#remote-recipes-optimization">Remote Recipes Optimization</a>
+            
+                
+    <ol>
+    
+        <li>
+            <a href="index.html#splitting-data-in-smaller-chunks">Splitting data in smaller chunks</a>
+            
+        </li>
+    
+        <li>
+            <a href="index.html#loading-only-new-data">Loading only new data</a>
+            
+        </li>
+    
+</ol>
+
+            
+        </li>
+    
+        <li>
+            <a href="index.html#upgrading-from-previous-version">Upgrading from previous version</a>
+            
+                
+    <ol>
+    
+        <li>
+            <a href="index.html#upgrading-from-10">Upgrading from 1.0</a>
+            
+        </li>
+    
+</ol>
+
+            
+        </li>
+    
+        <li>
+            <a href="index.html#prepare-for-publishing">Prepare for publishing</a>
+            
+                
+    <ol>
+    
+        <li>
+            <a href="index.html#changing-package-name">Changing package name</a>
+            
+        </li>
+    
+        <li>
+            <a href="index.html#changing-content-provider-authorities">Changing content provider authorities</a>
+            
+        </li>
+    
+</ol>
+
+            
+        </li>
+    
+        <li>
+            <a href="index.html#misc">Misc</a>
+            
+                
+    <ol>
+    
+        <li>
+            <a href="index.html#rating-suggestions">Rating &amp; Suggestions</a>
+            
+        </li>
+    
+        <li>
+            <a href="index.html#credits">Credits</a>
+            
+        </li>
+    
+</ol>
+
+            
+        </li>
+    
+</ol>
+
+    </nav>
+    
+    <nav id="links">
+        <ul>
+            
+        </ul>
+    </nav>
+    
+</div>
+
+        <div id="content">
+            <h1 id="android-recipes-app">Android Recipes App</h1>
+<p><strong>Android Recipes App</strong> is a recipe cookbook mobile application for Android platform that is ready to use on both phones and tablets. 
+Just fill your recipes, choose one of the many color themes and you are ready to publish your application in Google Play.
+The application is fully native, using latest features of Android platform to provide the best user experience.
+The recipes are bundled with the application and can be used without internet connection.
+The application is specially optimized to be extremely easy to configure and detailed documentation is provided.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Windows XP (32-bit), Vista (32- or 64-bit), or Windows 7 (32- or 64-bit)</li>
+<li>Mac OS X 10.5.8 or later (x86 only)</li>
+<li>Linux (tested on Ubuntu Linux, Lucid Lynx)<ul>
+<li>GNU C Library (glibc) 2.7 or later is required.</li>
+<li>On Ubuntu Linux, version 8.04 or later is required.</li>
+<li>64-bit distributions must be capable of running 32-bit applications.</li>
+</ul>
+</li>
+<li>Latest <a href="http://developer.android.com/sdk/index.html">ADT Bundle</a></li>
+</ul>
+<h1 id="getting-started">Getting started</h1>
+<p>Thank you for buying <strong>Android Recipes App</strong>. To try the template you need to follow a few simple steps:</p>
+<ol>
+<li><a href="#import-projects-in-adt-bundle">Import projects in ADT Bundle</a></li>
+<li><a href="#run-android-recipes-app-on-a-device-or-on-android-emulator">Run any theme project</a></li>
+</ol>
+<p>If you are upgrading from previous version, check the <a href="#upgrading-from-previous-version">upgrading guide</a>.</p>
+<h2 id="import-projects-in-adt-bundle">Import projects in ADT Bundle</h2>
+<p>The application is configured to be build with latest <a href="http://developer.android.com/sdk/index.html">ADT Bundle</a>, so you need to install it before proceeding.</p>
+<ol>
+<li><a href="http://developer.android.com/sdk/installing/bundle.html">Launch ADT Bundle</a>.</li>
+<li>Select from the menu <code>File</code>-&gt;<code>Import</code>-&gt;<code>General</code>-&gt;<code>Existing Projects into Workspace</code>
+<img src="img/eclipse-import.png" alt="Import Existing Projects into Workspace">
+<img src="img/import_wizard.png" alt="Import Existing Projects into Workspace"></li>
+<li>Browse to the location where you extracted the <strong>Android Recipes App</strong></li>
+<li>Beside the <strong>Projects:</strong> list press <code>Select All</code></li>
+<li>Press <code>Finish</code>
+<img src="img/select_projects.png" alt="Select all projects"></li>
+<li>You should wait until ADT Bundle builds the projects and then you can <a href="#run-android-recipes-app-on-a-device-or-on-android-emulator">run</a> any of <code>recipes-*</code> projects to explore the different themes.</li>
+</ol>
+<p><img src="img/eclipse_building.png" alt="ADT Bundle building project"></p>
+<p><strong>Note:</strong> If you get errors, try by cleaning all projects:</p>
+<ol>
+<li>from the menu <code>Projects</code>-&gt;<code>Clean</code></li>
+<li>select all projects and press <code>OK</code>.</li>
+</ol>
+<p><img src="img/eclipse-clean-projects.png" alt="Clean all projects"></p>
+<h2 id="run-android-recipes-app-on-a-device-or-on-android-emulator">Run Android recipes app on a device or on Android emulator</h2>
+<p>Bellow are described the steps for running the application on Android emulator or on real device</p>
+<ol>
+<li>Right click on the project you want to run <code>Run As</code>-&gt;<code>1 Android Application</code>
+<img src="img/eclipse-run-menu.png" alt="Run as android application menu"></li>
+<li>Choose on what device or emulator to run the app.(If you haven&#39;t connected any devices or started any emulator, ADT Bundle will try to start most appropriate Android emulator and run the application on it).
+<img src="img/eclipse-run-project.png" alt="Select device"></li>
+</ol>
+<h1 id="customization">Customization</h1>
+<p>In the following lines I&#39;ll describe how to customize <strong>Android Recipes App</strong> to match your brand and needs.</p>
+<p>After you buy <strong>Android Recipes App</strong> you need to:</p>
+<ol>
+<li><a href="#import-projects-in-adt-bundle">Import projects in ADT Bundle</a></li>
+<li><a href="#choose-your-color-theme">Choose your color theme</a></li>
+<li><a href="#add-some-data-to-the-application">Add some data(Build json file with recipes and add recipes images)</a></li>
+<li><a href="#set-up-recipe-indices">Choose what indices to display in list and detailed page</a></li>
+<li><a href="#change-launcher-icon">Change Launcher icon</a></li>
+<li><a href="#change-splash-screen-icon">Change Splash screen icon</a></li>
+<li><a href="#change-application-name">Change Application name</a></li>
+<li><a href="#set-up-system-notifications">Set up notifications</a></li>
+<li><a href="#set-up-ads">Set up Ads</a></li>
+<li><a href="#set-up-google-analytics">Set up Google Analytics</a></li>
+<li><a href="#translate-in-different-language">Translate in different language</a></li>
+</ol>
+<p><strong>Note:</strong> You need to <a href="#run-android-recipes-app-on-a-device-or-on-android-emulator">run the project</a> after making changes, to see them in the application!</p>
+<h2 id="choose-your-color-theme">Choose your color theme</h2>
+<p>We provide <strong>Android Recipes App</strong> with 5 different color themes separated in 5 android projects. 
+You should choose one of these themes and make all the configurations and customizations in the project representing
+the color you have choosen. If you wish to see how the colors look like in the app you can <a href="#run-android-recipes-app-on-a-device-or-on-android-emulator">run any one of theme projects on a Device or on a Emulator</a></p>
+<h3 id="red-theme">Red theme</h3>
+<p>Project name: <strong>recipes-red</strong></p>
+<table>
+<thead>
+<tr>
+<th>Splash</th>
+<th>List</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/splash-red.png" alt="Splash red theme"></td>
+<td><img src="img/list-red.png" alt="List red theme"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="green-theme">Green theme</h3>
+<p>Project name: <strong>recipes-green</strong></p>
+<table>
+<thead>
+<tr>
+<th>Splash</th>
+<th>List</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/splash-green.png" alt="Splash green theme"></td>
+<td><img src="img/list-green.png" alt="List red theme"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="blue-theme">Blue theme</h3>
+<p>Project name: <strong>recipes-blue</strong></p>
+<table>
+<thead>
+<tr>
+<th>Splash</th>
+<th>List</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/splash-blue.png" alt="Splash blue theme"></td>
+<td><img src="img/list-blue.png" alt="List blue theme"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="purple-theme">Purple theme</h3>
+<p>Project name: <strong>recipes-purple</strong></p>
+<table>
+<thead>
+<tr>
+<th>Splash</th>
+<th>List</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/splash-purple.png" alt="Splash purple theme"></td>
+<td><img src="img/list-purple.png" alt="List purple theme"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="orange-theme">Orange theme</h3>
+<p>Project name: <strong>recipes-orange</strong></p>
+<table>
+<thead>
+<tr>
+<th>Splash</th>
+<th>List</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/splash-orange.png" alt="Splash orange theme"></td>
+<td><img src="img/list-orange.png" alt="List orange theme"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="add-some-data-to-the-application">Add some data to the application</h2>
+<p>Recipes are loaded when application starts and imported inside a local database. While the application is running it displays data from the local database, so even without internet connection the recipes will be browsable.</p>
+<h3 id="configuring-source-of-recipes-data">Configuring source of recipes data</h3>
+<p>The configuration is located inside <code>res/values/config.xml</code>. If you want to load recipes from remote location you need to specify the full URL:</p>
+<pre><code>    &lt;!-- res/values/config.xml --&gt;
+    &lt;!-- when url is specified the recipes are loaded from that location --&gt;
+    &lt;string name=&quot;recipes_url&quot;&gt;http://s3.amazonaws.com/masconsult-template-recipes/recipes.json&lt;/string&gt;
+</code></pre><p>When you don&#39;t need to load recipes from remote location, but rather ship with preloaded list, just clear the configuration and recipes will be loaded from local <code>assets/recipes.json</code> file.</p>
+<pre><code>    &lt;!-- res/values/config.xml --&gt;
+    &lt;!-- when no url is specified the recipes are loaded from assets/recipes.json file --&gt;
+    &lt;string name=&quot;recipes_url&quot;&gt;&lt;/string&gt;
+</code></pre><h3 id="recipes-data-format">Recipes data format</h3>
+<p>The recipes data uses <a href="http://www.json.org/">JSON</a> format. Bundled with each project is a sample file <code>assets/recipes.json</code> with populated data which can help you understand the structure.</p>
+<pre><code class="lang-json">{
+    &quot;recipes&quot;: [
+        {
+            &quot;id&quot;: &quot;recipe1&quot;,
+            &quot;category&quot;: &quot;dinner&quot;,
+            &quot;name&quot;: &quot;Beef&quot;,
+            &quot;image&quot;: &quot;beef.jpg&quot;,
+            &quot;summary&quot;: &quot;Beef dinner&quot;,
+            &quot;direction&quot;: &quot;1. Take one beef\n 2. Slice\n 3. Spice\n 4. Cook\n 5. Serve with wine&quot;,
+            &quot;prep_time&quot;: 7,
+            &quot;cook_time&quot;: 45,
+            &quot;total_time&quot;: 55,
+            &quot;serves&quot;: 1,
+            &quot;ingredients&quot;: [
+                &quot;1kg of fresh beef meat&quot;,
+                &quot;1 bottle of fine red wine&quot;
+            ]
+        }
+    ]
+}
+</code></pre>
+<p>Each recipe is surrounded by <code>{</code> and <code>}</code> (opening and closing curly brackets). Inside you have a series of <code>name</code>:<code>value</code> with the following meaning:</p>
+<ul>
+<li><code>id</code>: is an optional identificator for recipe, when ommited the combination of category and name is used to check for duplicating recipes. If you are using only local file, you can safely ignore this field.</li>
+<li><code>category</code>: is the category of the recipe, you may enter whatever category you decide, just bear in mind that this is the name visible in the categories list inside the application</li>
+<li><code>name</code>: is the name of recipe as seen in the application</li>
+<li><code>image</code>: the name of the image to use for this recipe. Images are located inside <code>images</code> directory and may be divided in subdirectories - in which case you need to enter the subdirectory name followed by <code>/</code> (forward slash)</li>
+<li><code>summary</code>: a short summary presenting the result of the recipe</li>
+<li><code>directions</code>: the full directions needed to follow the recipe</li>
+<li><code>prep_time</code>: is the time in minutes needed to prepare the recipe.</li>
+<li><code>cook_time</code>: is the time in minutes needed to cook the recipe.</li>
+<li><code>total_time</code>: is the total time in minutes needed to cook the recipe. If this number is omitted but <code>prep_time</code> and/or <code>cook_time</code> is present it will be automatically calculated.</li>
+<li><code>serves</code>: the number of serving for the given ingredients quantities.</li>
+<li><code>ingredients</code>: is a comma-separated list (defined using square brackets <code>[</code> and <code>]</code>) of strings, each one surrounded by <code>&quot;</code> (double quotes). E.g.:<pre><code class="lang-json">&quot;ingredients&quot;: [&quot;flour&quot;, &quot;salt&quot;, &quot;water&quot;]
+</code></pre>
+</li>
+</ul>
+<p><strong>Warning:</strong> If you need to add a quote <code>&quot;</code> inside the strings you need to escape it like this <code>\&quot;</code></p>
+<p><strong>Note:</strong> If you want to add new line in the <code>summary</code> or <code>directions</code> fields use <code>\n</code>. E.g. </p>
+<pre><code class="lang-json">    [{ &quot;summary&quot;: &quot;Great appetizer.\nRecommended with spices&quot; }]
+</code></pre>
+<p>To verify the file is syntactically correct you can copy/paste it to <a href="http://pro.jsonlint.com/">JSONLint</a></p>
+<h3 id="recipes-update">Recipes update</h3>
+<p>When using local <code>assets/recipes.json</code> file to load recipes, they are loaded only when the application is first run, or when application have been updated.
+When using remote recipes url, every time the application is started the url is retrieved and recipes are loaded. To minimize the traffic, you can use the <a href="#remote-recipes-optimization">extended format</a> for remote recipes and specify url that will only return new recipes.</p>
+<h2 id="set-up-recipe-indices">Set up recipe indices</h2>
+<p>You can set up what indices to display in the recipes list and recipe detail screens.
+Supported indices are:</p>
+<ul>
+<li>Preparation time</li>
+<li>Cooking time</li>
+<li>Total time</li>
+<li>Servings</li>
+</ul>
+<p>You can enable/disable each one of indices from <code>res/values/config.xml</code>.</p>
+<h3 id="display-preparation-time">Display preparation time</h3>
+<p>Controls whether to display preparation time for each recipe. If you do not support preparation time, disable by setting <code>false</code>.</p>
+<table>
+<thead>
+<tr>
+<th>List</th>
+<th>Recipe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/list-no-prep.png" alt="List without preparation time"></td>
+<td><img src="img/detail-no-prep.png" alt="Recipe details without preparation time"></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-xml">  &lt;!-- res/values/config.xml --&gt;
+  &lt;bool name=&quot;show_prep_time&quot;&gt;true&lt;/bool&gt;
+</code></pre>
+<h3 id="display-cooking-time">Display cooking time</h3>
+<p>Controls whether to display cooking time for each recipe. If you do not support cooking time, disable by setting <code>false</code>.</p>
+<table>
+<thead>
+<tr>
+<th>List</th>
+<th>Recipe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/list-no-cook.png" alt="List without cooking time"></td>
+<td><img src="img/detail-no-cook.png" alt="Recipe details without cooking time"></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-xml">  &lt;!-- res/values/config.xml --&gt;
+  &lt;bool name=&quot;show_cook_time&quot;&gt;true&lt;/bool&gt;
+</code></pre>
+<h3 id="display-total-time">Display total time</h3>
+<p>Controls whether to display total time for each recipe. If you do not supply total time in your data it is calculated by summing <code>prep_time</code> and <code>cook_time</code>.
+If you do not want to display preparation time, disable by setting <code>false</code>.</p>
+<table>
+<thead>
+<tr>
+<th>List</th>
+<th>Recipe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/list-no-total.png" alt="List without total time"></td>
+<td><img src="img/detail-no-total.png" alt="Recipe details without total time"></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-xml">  &lt;!-- res/values/config.xml --&gt;
+  &lt;bool name=&quot;show_total_time&quot;&gt;true&lt;/bool&gt;
+</code></pre>
+<h3 id="display-servings">Display servings</h3>
+<p>Controls the display of servings. If you do not want to display serving, disable it by setting to <code>false</code>.</p>
+<table>
+<thead>
+<tr>
+<th>List</th>
+<th>Recipe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/list-all-settings.png" alt="List without servings"></td>
+<td><img src="img/detail-no-serv.png" alt="Recipe details without servings"></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-xml">  &lt;!-- res/values/config.xml --&gt;
+  &lt;bool name=&quot;show_servings&quot;&gt;true&lt;/bool&gt;
+</code></pre>
+<h2 id="change-launcher-icon">Change Launcher icon</h2>
+<p>For best result you should have your icon designed in 512x512 pixels resolution. Then replace the following files:</p>
+<ul>
+<li><code>res/drawable-mdpi/ic_launcher.png</code> with 48x48 px</li>
+<li><code>res/drawable-hdpi/ic_launcher.png</code> with 72x72 px</li>
+<li><code>res/drawable-xhdpi/ic_launcher.png</code> with 96x96 px</li>
+<li><code>res/drawable-xxhdpi/ic_launcher.png</code> with 144x144 px</li>
+<li><code>res/drawable-xxxhdpi/ic_launcher.png</code> with 192x192 px</li>
+</ul>
+<p><strong>Note:</strong> You need the 512x512 px size for publishing to Google Play.</p>
+<h2 id="change-splash-screen-icon">Change Splash screen icon</h2>
+<p>The splash screen uses by default themed background and larger version of the launcher icon centered in the middle. If you just want to change the icon you should replace the file
+<code>res/drawable-xxhdpi/logo.png</code> with one about 300x300 pixels.</p>
+<p>If you want to make more modifications the layout for splash screen is located at <code>res/layout/activity_splash.xml</code>.</p>
+<p><img src="img/splash.png" alt="Splash screen"></p>
+<h2 id="change-application-name">Change Application name</h2>
+<p>The application name is stored inside <code>res/values/strings.xml</code> as:</p>
+<pre><code class="lang-xml">    &lt;!-- res/values/strings.xml --&gt;
+    &lt;string name=&quot;app_name&quot;&gt;Recipes&lt;/string&gt;
+</code></pre>
+<p>Just change to whatever your application will be called.</p>
+<h2 id="set-up-system-notifications">Set up system notifications</h2>
+<p>By default every day a notification will be presented featuring one recipe. When user clicks on the notification it will open the application on that recipe.
+The notifications don&#39;t include sound, vibrator or led indicator. You can modify the interval(in hours) or if you put zero the notifications will be disabled:</p>
+<table>
+<thead>
+<tr>
+<th>Closed notification</th>
+<th>Large notification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/notification-closed.png" alt="Closed notification"></td>
+<td><img src="img/notification-large.png" alt="Large notification"></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="lang-xml">  &lt;!-- res/values/config.xml --&gt;
+  &lt;integer name=&quot;notifications_interval&quot;&gt;22&lt;/integer&gt;
+</code></pre>
+<h2 id="set-up-ads">Set up Ads</h2>
+<table>
+<thead>
+<tr>
+<th>With ads</th>
+<th>Without ads</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="img/details-ad.png" alt="Recipe details with ads"></td>
+<td><img src="img/details-noad.png" alt="Recipe details without ads"></td>
+</tr>
+</tbody>
+</table>
+<p>The template comes with integrated <a href="https://apps.admob.com/">AdMob</a>. To enable it you need to enter your AdMob unit id.</p>
+<ol>
+<li>Open <code>res/values/config.xml</code></li>
+<li>Locate <strong>admob_unit_id</strong></li>
+<li>Enter your AdMob unit ID</li>
+</ol>
+<pre><code class="lang-xml">  &lt;!-- res/values/config.xml --&gt;
+  &lt;string name=&quot;admob_unit_id&quot;&gt;{YOUR ADMOB UNIT ID GOES HERE}&lt;/string&gt;
+</code></pre>
+<p>To find your AdMob unit ID, login to <a href="https://apps.admob.com/">AdMob</a> click the <code>Monetize</code> tab. Click <code>All apps</code> from the left-hand side and select an app. The ad unit ID is under the ad unit name. 
+For more information refer to <a href="https://support.google.com/admob/v2/answer/3016009">AdMob Help</a>.</p>
+<p>If you leave the entry empty ads will not be displayed.</p>
+<h2 id="set-up-google-analytics">Set up Google Analytics</h2>
+<p>To enable <a href="http://www.google.com/analytics/">Google Analytics</a> you need to enter your Google Analytics tracking ID. If you want to disable analytcis just leave the entry empty.</p>
+<ol>
+<li>Open <code>res/values/config.xml</code></li>
+<li>Locate <strong>ga_trackingId</strong></li>
+<li>Enter your <a href="http://support.google.com/analytics/answer/2614741">Google Analytics tracking ID</a></li>
+</ol>
+<pre><code class="lang-xml">  &lt;!-- res/values/config.xml --&gt;
+  &lt;string name=&quot;ga_trackingId&quot;&gt;{YOUR TRACKING ID GOES HERE}&lt;/string&gt;
+</code></pre>
+<h2 id="translate-in-different-language">Translate in different language</h2>
+<p>All the texts used in the template are contained in a single file <code>/res/values/strings.xml</code>. To translate the  template change all values in the file with appropriate translation. </p>
+<h1 id="remote-recipes-optimization">Remote Recipes Optimization</h1>
+<h2 id="splitting-data-in-smaller-chunks">Splitting data in smaller chunks</h2>
+<p>When retrieving recipes over network it is good practice to split large files in smaller chunks. This allows for partial display of data 
+as well as handle network connection change. To tell the application that you are serving only a part of the whole data, add a field <code>next_page</code> with 
+absolute URL where the next part is located. You can repeat this process as long as needed. Good rule of thumb is to split data in sizes of about 50-60kb, 
+which should translate in about 25 recipes.</p>
+<pre><code class="lang-json">    {
+        &quot;recipes&quot;: [{...}, {...}],
+        &quot;next_page&quot;: &quot;http://s3.amazonaws.com/masconsult-template-recipes/recipes-page2.json&quot;,
+    }
+</code></pre>
+<p><strong>Note:</strong> the <code>recipes</code> array is ommitted for clarity!</p>
+<p><strong>Warning:</strong> you need to provide absolute url for <code>next_page</code> field.</p>
+<h2 id="loading-only-new-data">Loading only new data</h2>
+<p>Having downloading all recipes every time the application starts may lead to excess data usage and unhappy users. To optimize the transfer of
+only new data, add a field <code>next_update</code> with absolute URL which will be used the next time recipes are updated. Good rule of thumb is to include
+the timestamp when the current update is happening, so you can return only data that is newer than this timestamp next time.</p>
+<pre><code class="lang-json">    {
+        &quot;recipes&quot;: [{...}, {...}],
+        &quot;next_update&quot;: &quot;http://s3.amazonaws.com/masconsult-template-recipes/recipes-update.json&quot;,
+    }
+</code></pre>
+<p><strong>Note:</strong> the <code>recipes</code> array is ommitted for clarity!</p>
+<p><strong>Warning:</strong> you need to provide absolute url for <code>next_update</code> field.</p>
+<h1 id="upgrading-from-previous-version">Upgrading from previous version</h1>
+<h2 id="upgrading-from-1-0">Upgrading from 1.0</h2>
+<ol>
+<li>Copy over the content of <code>recipes-&lt;color&gt;</code> folder contained in the package you downloaded over your project, without <code>assets</code> folder and <code>res/values/config.xml</code>.</li>
+<li><p>Edit <code>config.xml</code> and add to the bottom just before the final <code>&lt;/resources&gt;</code> line:</p>
+<pre><code class="lang-xml">     &lt;!-- URL where the recipes are located. Application will load only remote recipes if URL is present or load recipes from local assets/recipes.json file if entry is empty --&gt;
+     &lt;!--
+     uncomment to test with remote recipes
+     &lt;string name=&quot;recipes_url&quot; translatable=&quot;false&quot;&gt;http://s3.amazonaws.com/masconsult-template-recipes/recipes.json&lt;/string&gt;
+     --&gt;
+     &lt;!-- when empty recipes are loaded from local assets/recipes.json file --&gt;
+     &lt;string name=&quot;recipes_url&quot; translatable=&quot;false&quot;&gt;&lt;/string&gt;
+</code></pre>
+</li>
+<li><p>Edit your <code>assets/recipes.json</code> file and add at the very beggining before the first <code>[</code>:</p>
+<pre><code class="lang-json"> {
+   &quot;recipes&quot;:
+</code></pre>
+</li>
+<li><p>Edit your <code>assets/recipes.json</code> file and add at the very end after the final <code>]</code>:</p>
+<pre><code class="lang-json"> }
+</code></pre>
+</li>
+<li><p>Make sure your <code>assets/recipes.json</code> file looks like this:</p>
+<pre><code class="lang-json"> {
+   &quot;recipes&quot;: [
+     {
+       ... ommitted for clarity
+     },
+     {
+       ... ommitted for clarity
+     }
+   ]
+ }
+</code></pre>
+</li>
+<li><p>Make sure everything works, by <strong>removing</strong> and <strong>installing</strong> the application on device or emulator.</p>
+</li>
+</ol>
+<h1 id="prepare-for-publishing">Prepare for publishing</h1>
+<p>Before publishing the application to Google Play, make sure you have done:</p>
+<ol>
+<li><a href="#change-launcher-icon">Changed the launcher icon</a> in <code>res/drawable-*/ic_launcher.png</code></li>
+<li><a href="#change-splash-screen-icon">Changed the splash icon</a> in <code>res/drawable-*/ic_launcher.png</code></li>
+<li><a href="#change-application-name">Changed the application name</a> in <code>res/values/strings.xml</code></li>
+<li><a href="#add-some-data-to-the-application">Added recipes</a> in <code>recipes.json</code></li>
+<li><a href="#changing-package-name">Changed the package name</a> in <code>AndroidManifest.xml</code></li>
+<li><a href="#changing-content-provider-authorities">Changed content provider authorities</a> to match your package name in <code>res/values/config.xml</code></li>
+</ol>
+<h2 id="changing-package-name">Changing package name</h2>
+<p>Every application in Google Play has an unique application name usually in the form <code>com.example.app</code>. Before you can publish your application you need to change the
+application name to something unique (like use your domain as prefix in reverse order). To change it, you need to:</p>
+<ol>
+<li>Run ADT and open the project</li>
+<li>Right click on the project</li>
+<li>From the popup menu select <code>Android Tools</code>-&gt;<code>Rename Application Package</code>
+<img src="img/eclipse-rename-package.png" alt="Change package name menu"></li>
+<li>Enter your new package name and press <code>OK</code>
+<img src="img/rename_package.png" alt="Rename Application Package"></li>
+<li>Press <code>Finish</code>
+<img src="img/rename_package2.png" alt="Rename Application Package"></li>
+</ol>
+<p>That&#39;s it.</p>
+<h2 id="changing-content-provider-authorities">Changing content provider authorities</h2>
+<p>In android, data are stored in a special container called <strong>ContentProvider</strong>. Each content provider needs to have an unique identifier, that is usually derived from
+the package name with some suffix. Before you publish your application you need to change these unique identifiers called authorities.</p>
+<ol>
+<li>Open the file <code>res/values/config.xml</code></li>
+<li>Locate the lines for <code>search_suggestions_authority</code> and <code>recipes_content_authority</code>:<pre><code class="lang-xml"> &lt;string name=&quot;search_suggestions_authority&quot;&gt;eu.masconsult.template.recipes.content.SearchRecipeSuggestionsProvider&lt;/string&gt;
+ &lt;string name=&quot;recipes_content_authority&quot;&gt;eu.masconsult.template.recipes.content.recipesdb&lt;/string&gt;
+</code></pre>
+</li>
+<li>Replace the text <strong>eu.masconsult.template.recipes</strong> with what you put as your <a href="##changing-package-name">package name</a>.</li>
+<li>Save and run your application</li>
+<li>Try to browse and search for recipies to verify everything is working.</li>
+</ol>
+<h1 id="misc">Misc</h1>
+<h2 id="rating-suggestions">Rating &amp; Suggestions</h2>
+<p>If you like our app, we will highly appreciate if you can provide us a rating of 5.</p>
+<p>We would love to get suggestions from you. Tell us in comment section what other features you want to see with this app. We will try to add more features into it.</p>
+<h2 id="credits">Credits</h2>
+<p>All images and recipes in the demo are for demonstrative purposes only and are not available for use by buyers.</p>
+<ul>
+<li><a href="http://thekeenancookbook.com">The Keenan Cookbook</a></li>
+<li><a href="http://cookingventures.blogspot.com">Cooking Ventures</a></li>
+</ul>
+<p>Icons are generated from:</p>
+<ul>
+<li><a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a></li>
+<li><a href="http://www.justbenicestudio.com">Web Symbols</a></li>
+<li><a href="http://www.entypo.com">Entypo</a></li>
+<li><a href="http://typicons.com">Typicons</a></li>
+<li><a href="http://www.mfglabs.com">MFG Labs</a></li>
+<li><a href="http://mapbox.com/maki">Maki</a></li>
+<li><a href="http://aristeides.com">Elusive</a></li>
+<li><a href="http://designmodo.com/linecons-free">Linecons</a></li>
+</ul>
+<p>The following libraries are distributed and used:</p>
+<ul>
+<li><a href="https://github.com/robotoworks/mechanoid">Mechanoid</a> version 0.2.2: <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2</a> license</li>
+<li><a href="https://github.com/nostra13/Android-Universal-Image-Loader">Universal Image Loader for Android</a> version 1.9.1: <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2</a> license</li>
+<li><a href="https://github.com/commonsguy/cwac-merge">CWAC MergeAdapter</a> version 1.0.1: <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2</a> license</li>
+<li><a href="https://github.com/commonsguy/cwac-sacklist">CWAC SackOfViewsAdapter</a> version 1.0.0: <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2</a> license</li>
+<li><a href="https://developers.google.com/analytics/devguides/collection/android/">Google Analytics Android SDK</a> version 3.01: Copyright 2013 Google, Inc. All rights reserved.</li>
+<li><a href="https://developer.android.com/google/play-services/index.html">Google Play Services SDK</a> revision 14: Copyright 2013 Google, Inc. All rights reserved.</li>
+<li><a href="http://developer.android.com/tools/support-library/features.html#v7-appcompat">Android Support Library v7 appcompat</a> revision 19.0.1: <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2</a> license</li>
+</ul>
+<p>Once again, thank you so much for purchasing this theme. 
+As I said at the beginning, I would be glad to help you if you have any questions relating to this theme. 
+No guarantees, but I will do my best to help. </p>
+
+
+
+
+        </div>
+        <footer id="footer">
+            Powered by <a href="http://github.com/maximebf/beautiful-docs">beautiful-docs</a> -
+            <a href="#top">Back to top</a> - <a href="all.html">Everything on a single page</a>
+            - <a href="?print=1">Print current page</a> - <a href="all.html?print=1">Print all pages</a>
+            
+        </footer>
+    </div>
+</body>
+</html>
